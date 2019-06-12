@@ -1,0 +1,2 @@
+# minerl
+The MineRL Competition
