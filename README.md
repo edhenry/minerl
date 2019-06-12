@@ -2,7 +2,7 @@
 [The MineRL Competition!](http://minerl.io/competition/)
 
 # Development Environment
-We have two C4130 servers with
+We have two C4130 servers each with
  - 4x P100 GPUs
  - 72 CPU Cores
  - 515 GB of Memory
