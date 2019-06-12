@@ -13,6 +13,7 @@ We have two C4130 servers with
 Landon has been using a Pytorch docker container to start!
 
 Example docker container
+
 `NV_GPU=0 nvidia-docker run  --cpus="6" -m="112g" --rm  -ti --ipc=host -p 4000:800 \
 --mount type=bind,src=/home/landon_chambers@SAAS.LOCAL/minerl,dst=/workspace \
 e19f3b87dbf3`
