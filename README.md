@@ -30,5 +30,31 @@ e19f3b87dbf3`
 The container has Ubuntu OS 16.04 so remember to use Debian commands!
 
 ## Additional Installations
-At some point, we need to create a self-contained Dockerfile, but the AI Agent Landon is learning too slowly!
-Here are some additional commands that I needed to run to do the helloworld tutorial
+We need to create a self-contained Dockerfile!
+In the meantime, here are some additional commands that Landon needed to run to do the helloworld tutorial.
+
+'''
+#install jdk 1.8 on ubuntu (removed sudo)
+apt-get update
+apt-get install software-properties-common
+add-apt-repository ppa:openjdk-r/ppa
+apt-get install openjdk-8-jdk
+
+#install minerl package (takes about 5 minutes)
+pip install minerl
+
+#install xorg 
+apt-get install xorg openbox
+
+#install xvfb for rendering in headless server
+apt-get install xvfb
+
+#test run-xvfb (should give some output)
+xvfb-run -s "-ac -screen 0 1280x1024x24" xvinfo
+
+#Example: run script that builds minerl environment
+xvfb-run -s "-ac -screen 0 1280x1024x24" python helloworld.py
+
+#Set env variable that locates data directory
+export MINERL_DATA_ROOT="/workspace/data"
+'''
