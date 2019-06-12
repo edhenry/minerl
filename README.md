@@ -14,6 +14,12 @@ Landon has been using a Pytorch docker container to start!
 
 Example docker container
 
-`NV_GPU=0 nvidia-docker run  --cpus="6" -m="112g" --rm  -ti --ipc=host -p 4000:800 \
---mount type=bind,src=/home/landon_chambers@SAAS.LOCAL/minerl,dst=/workspace \
+`NV_GPU=0 nvidia-docker run  --cpus="6" -m="112g" --rm  -ti --ipc=host -p 4000:800 
+--mount type=bind,src=/home/landon_chambers@SAAS.LOCAL/minerl,dst=/workspace 
 e19f3b87dbf3`
+
+- NV_GPU=0 isolates GPU 0. To isolate two GPUS, you could use NV_GPU=1,2 for example.
+- restricted to 6 cpus and 112GB of memory
+- port 800 on the docker container will talk to port 4000 on the server.
+- I 'bind' mounted a drive on the server to a drive on the docker container. This is I can SSH into server with my windows VDI and develop in VS Code!
+- Image e19f3b87dbf3 is pytorch image that I pulled from Docker Hub
