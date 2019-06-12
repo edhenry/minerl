@@ -72,6 +72,6 @@ Landon is doing everything in VS Code. It's great! I have my python code, server
 
 Here are some high-level instructions for using VS Code with an SSH Tunnel to a server
 Follow instructions [here](https://code.visualstudio.com/docs/remote/ssh) and see Landon's notes below.
-- Landon installed Git for Windows for OpenSSH compatible SSH client
-- Landon installed the Remote Development extension pack using the extension installer in VS Code
- -Landon had to enable the show terminal option for the Remote Development extension and use his password to login. 
+- Installed Git for Windows for OpenSSH compatible SSH client
+- Installed the Remote Development extension pack using the extension installer in VS Code
+- Enabled the "show terminal" setting for the Remote Development extension and used ssh password to login to server. 
