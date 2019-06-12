@@ -35,29 +35,37 @@ In the meantime, here are some additional commands that Landon needed to run *wi
 
 
 install jdk 1.8 on ubuntu
-`apt-get update`
 
-`apt-get install software-properties-common`
-
-`add-apt-repository ppa:openjdk-r/ppa`
-
-`apt-get install openjdk-8-jdk`
+```
+{
+apt-get update
+apt-get install software-properties-common
+add-apt-repository ppa:openjdk-r/ppa
+apt-get install openjdk-8-jdk
+}
+```
 
 install minerl package (takes about 5 minutes)
+
 `pip install minerl`
 
 install xorg (Landon's crutch for getting xvfb to work)
+
 `apt-get install xorg openbox`
 
 install xvfb for rendering in headless server
+
 `apt-get install xvfb`
 
 test run-xvfb (should give some output)
+
 `xvfb-run -s "-ac -screen 0 1280x1024x24" xvinfo`
 
 Example: run script that builds minerl environment
+
 `xvfb-run -s "-ac -screen 0 1280x1024x24" python helloworld.py`
 
 Set env variable that locates data directory
+
 `export MINERL_DATA_ROOT="/workspace/data"`
 
