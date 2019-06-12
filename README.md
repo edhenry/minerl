@@ -33,12 +33,15 @@ The container has Ubuntu OS 16.04 so remember to use Debian commands!
 We need to create a self-contained Dockerfile!
 In the meantime, here are some additional commands that Landon needed to run to do the helloworld tutorial.
 
-'''
-#install jdk 1.8 on ubuntu (removed sudo)
-apt-get update
+
+install jdk 1.8 on ubuntu (removed sudo)
+`apt-get update
+
 apt-get install software-properties-common
+
 add-apt-repository ppa:openjdk-r/ppa
-apt-get install openjdk-8-jdk
+
+apt-get install openjdk-8-jdk`
 
 #install minerl package (takes about 5 minutes)
 pip install minerl
@@ -57,4 +60,4 @@ xvfb-run -s "-ac -screen 0 1280x1024x24" python helloworld.py
 
 #Set env variable that locates data directory
 export MINERL_DATA_ROOT="/workspace/data"
-'''
+
