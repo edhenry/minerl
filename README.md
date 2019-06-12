@@ -37,12 +37,10 @@ In the meantime, here are some additional commands that Landon needed to run *wi
 install jdk 1.8 on ubuntu
 
 ```
-{
 apt-get update
 apt-get install software-properties-common
 add-apt-repository ppa:openjdk-r/ppa
 apt-get install openjdk-8-jdk
-}
 ```
 
 install minerl package (takes about 5 minutes)
@@ -70,10 +68,10 @@ Set env variable that locates data directory
 `export MINERL_DATA_ROOT="/workspace/data"`
 
 ## Develop from Windows VDI
-Landon is doing everything in VS Code. It's great! I have my python code, server terminal, and container terinal all on one screen :)
+Landon is doing everything in VS Code. It's great! I have my python code, server terminal, and container terminal all on one screen :)
 
 Here are some high-level instructions for using VS Code with an SSH Tunnel to a server
 Follow instructions [here](https://code.visualstudio.com/docs/remote/ssh) and see Landon's notes below.
 - Landon installed Git for Windows for OpenSSH compatible SSH client
 - Landon installed the Remote Development extension pack using the extension installer in VS Code
---Landon had to enable the show terminal option for the Remote Development extension and use his password to login. 
+ -Landon had to enable the show terminal option for the Remote Development extension and use his password to login. 
